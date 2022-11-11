@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Single line check
-        run: echo, hello world
+        run:  echo Hello, world!
