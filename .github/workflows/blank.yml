@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Convert to Mdapi 
-        run: echo Hello, world!
+        run: sfdx force:source:convert -r "/Users/kishansingh/ci-cd-tutorial" -d "/Users/kishansingh/ci-cd-tutorial/mdapi" -n 'My Package'
