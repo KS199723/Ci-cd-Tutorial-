@@ -10,7 +10,7 @@
         <members>HTTPCalloutServiceTest</members>
         <name>ApexClass</name>
     </types>
-    <types>
+    <types> 
         <members>HTTPCalloutConfiguration__mdt.Body__c</members>
         <members>HTTPCalloutConfiguration__mdt.CertificateName__c</members>
         <members>HTTPCalloutConfiguration__mdt.Endpoint__c</members>
