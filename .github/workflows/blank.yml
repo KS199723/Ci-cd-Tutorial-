@@ -8,8 +8,8 @@ jobs:
       SFDX-CLI-Deploy:
              runs-on: ubuntu-latest
              steps:
-                  - run: echo "🐧 GitHub Action running on ${{ runner.os }}"
-                  - run:  echo "🔎 Retrieving ${{ github.ref }} from ${{ github.repository }}."
+                  - run: echo " GitHub Action running on ${{ runner.os }}"
+                  - run:  echo "Retrieving ${{ github.ref }} from ${{ github.repository }}."
                   - uses: actions/checkout@v2
                   - run: npm install sfdx-cli -g
                   - run: echo "${{ secrets.SALESFORCE_JWT_SECRET_KEY }}" > server.key    
