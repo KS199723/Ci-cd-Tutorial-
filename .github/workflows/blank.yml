@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Convert to Mdapi 
-        run: sfdx force:source:convert -r "/Users/kishansingh/ci-cd-tutorial" -d "/Users/kishansingh/ci-cd-tutorial/mdapi" -n 'My Package'
+      - name: Single line check
+        run: echo, hello world
