@@ -5,7 +5,7 @@
 * Last Updated:- 07/12/2019
 * Description:- This is the custom exception class with error messages
 * Contributors:-
-*    1. Rahul Malhotra
+*    
 */
 public class HTTPCalloutFrameworkException extends Exception {
     public static final String CUSTOM_METADATA_NOT_FOUND = 'Unable to query custom metadata. Make sure you\'ve passed the correct developer name.';
