@@ -6,7 +6,7 @@ on:
             branches: [ "main" ]
 jobs:
       SFDX-CLI-Deploy:
-             runs-on: ubuntu-latest
+             runs-on: ubuntu-latest 
              steps:
                   - run: echo " GitHub Action running on ${{ runner.os }}"
                   - run:  echo "Retrieving ${{ github.ref }} from ${{ github.repository }}."
