@@ -13,7 +13,7 @@
 public class HTTPCalloutAsyncServiceTest {
 
     /*
-    * Initializing constants
+    * Initializing constants 
     */
     private static final String CUSTOM_METADATA_NAME = 'TestMetadata';
     private static final String RESPONSE_BODY = '{"output":"Test Output"}';
