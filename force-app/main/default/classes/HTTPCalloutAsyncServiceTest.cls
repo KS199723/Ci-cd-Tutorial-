@@ -6,8 +6,6 @@
 * Description:- This is the test class for HTTPCalloutAsyncService class.
 *               Test Coverage:- HttpCalloutAsyncService.cls (100%)
 * Dependencies:- TestMetadata record in HTTPCalloutConfiguration__mdt
-* Contributors:-
-*    1. Rahul Malhotra 
 */
 @isTest
 public class HTTPCalloutAsyncServiceTest {
@@ -18,7 +16,7 @@ public class HTTPCalloutAsyncServiceTest {
     private static final String CUSTOM_METADATA_NAME = 'TestMetadata';
     private static final String RESPONSE_BODY = '{"output":"Test Output"}';
     private static final Integer RESPONSE_SUCCESS = 200;
-    private static final Integer TIMEOUT = 120;
+    private static final Integer TIMEOUT = 120; 
 
     /*
     * Testing with predefined custom metadata record
@@ -26,7 +24,7 @@ public class HTTPCalloutAsyncServiceTest {
     @isTest
     public static void testWithCustomMetadata() {
         Test.startTest();
-        List<HTTPResponse> mockResponses = new List<HTTPResponse>();
+        List<HTTPResponse> mockResponses = new List<HTTPResponse>();  
         HTTPCalloutServiceMock mock = new HTTPCalloutServiceMock(RESPONSE_SUCCESS, RESPONSE_BODY);
         HTTPCalloutAsyncService service = new HTTPCalloutAsyncService(TIMEOUT, new List<String>{ CUSTOM_METADATA_NAME });
         Continuation con = service.sendRequest('getAsyncCalloutResponse');
@@ -34,7 +32,7 @@ public class HTTPCalloutAsyncServiceTest {
         System.assert(requests.size() == 1);
         for(String requestLabel : service.getRequestLabels()) {
             HTTPRequest request = requests.get(requestLabel);
-            HTTPresponse response = mock.respond(request);
+            HTTPresponse response = mock.respond(request); 
             System.assert(request!=null);
             System.assert(response!=null);
             mockResponses.add(response);
