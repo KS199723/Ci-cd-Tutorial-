@@ -13,7 +13,6 @@ jobs:
                   - uses: actions/checkout@v2
                   - run: npm install sfdx-cli -g
                   - run: sfdx force:source:convert -r ./force-app -d ./toDeploy
-                  - name: Install sfdxGit delta
                   - run: |
                      echo y | sfdx plugins:install sfdx-git-delta
                           sfdx sgd:mdapi:delta --to "HEAD" --from "HEAD^"  --ignore ignorefile --output "."
