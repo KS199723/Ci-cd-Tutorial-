@@ -18,7 +18,7 @@ jobs:
                   - run: sfdx force:source:convert -r ./force-app -d ./toDeploy
                   - name: Install sfdxGit delta
                   - run: |
-                         echo y | sfdx plugins:install sfdx-git-delta
+                     echo y | sfdx plugins:install sfdx-git-delta
                           sfdx sgd:mdapi:delta --to "HEAD" --from "HEAD^"  --ignore ignorefile --output "."
                           cat package/package.xml
                   - run: echo "${{ secrets.SALESFORCE_JWT_SECRET_KEY }}" > server.key    
