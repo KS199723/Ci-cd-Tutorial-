@@ -14,7 +14,7 @@ jobs:
                   - run: npm install sfdx-cli -g
                   - run: |
                      echo y | sfdx plugins:install sfdx-git-delta
-                          sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --./toDeploy --output "."
+                         sfdx sgd:source:delta --to "HEAD" --from "HEAD~1" --output "."
               
                   - run: sfdx force:source:convert -r ./force-app -d ./toDeploy
                   - run: echo "${{ secrets.SALESFORCE_JWT_SECRET_KEY }}" > server.key    
