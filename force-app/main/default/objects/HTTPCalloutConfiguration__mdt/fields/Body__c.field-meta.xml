@@ -8,5 +8,5 @@
     <label>Body</label>
     <length>131072</length>
     <type>LongTextArea</type>
-    <visibleLines>3</visibleLines>
+    <visibleLines>3</visibleLines> 
 </CustomField>

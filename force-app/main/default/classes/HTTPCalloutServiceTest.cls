@@ -6,8 +6,6 @@
 * Description:- This is the test class for HTTPCalloutService class.
 *               Test Coverage:- HttpCalloutService.cls (99%)
 * Dependencies:- TestMetadata record in HTTPCalloutConfiguration__mdt
-* Contributors:-
-*    1. Rahul Malhotra
 */
 @isTest
 public class HTTPCalloutServiceTest {
